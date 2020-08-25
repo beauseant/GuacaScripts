@@ -1,0 +1,1 @@
+connection_name,parent_id,protocol,proxy_port,proxy_hostname,proxy_encryption_method,max_connections,max_connections_per_user,connection_weight,failover_only,domain,hostname,ignore-cert,password,username,wol-broadcast-addr,wol-mac-addr,wol-send-packet
