@@ -41,7 +41,10 @@ class DB:
         for f in fields:
             sql = sql+f+','
             if type(connection[f])== str:
-                values = values + '"' + str(connection[f]) + '",'
+                if ( connection[f] == 'None' or connection[f] == ''):
+                    values = values + 'NULL,'
+                else:
+                    values = values + '"' + connection[f] + '",'
             else:
                 values = values + str(connection[f]) + ','
 
